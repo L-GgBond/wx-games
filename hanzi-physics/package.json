@@ -1,0 +1,18 @@
+{
+  "name": "hanzi-physics",
+  "version": "0.1.0",
+  "private": true,
+  "description": "一字一关 - 汉字部件物理搭桥小游戏",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "verify": "node verify.mjs",
+    "check": "npm run typecheck && npm run build && npm run verify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  }
+}

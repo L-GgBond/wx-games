@@ -1,0 +1,10 @@
+# dependencies（产物 game.js 与 package-lock.json 需要入库，保证 clone 后开箱即用）
+node_modules/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# local only
+*.local
