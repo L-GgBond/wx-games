@@ -1,0 +1,18 @@
+{
+  "name": "grow-catch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "接住它·万物生长 - 零阅读 / 无时间压力 / 掉落不惩罚的全年龄小游戏",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "verify": "node verify.mjs",
+    "check": "npm run typecheck && npm run build && npm run verify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  }
+}
