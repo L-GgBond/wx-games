@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>一格便利店 · 预览</title>
+<style>
+  html, body { height: 100%; margin: 0; background: #141C18; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center;
+         font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .phone { position: relative;
+           width: min(375px, 100vw, calc(100vh * 375 / 667));
+           aspect-ratio: 375 / 667;
+           box-shadow: 0 20px 60px rgba(0,0,0,.6); border-radius: 18px; overflow: hidden; }
+  #game { display: block; width: 100%; height: 100%; touch-action: none; }
+  #tip { position: fixed; bottom: 14px; left: 0; right: 0; text-align: center;
+         color: #6b7280; font-size: 12px; pointer-events: none; }
+  #toast { position: fixed; left: 50%; top: 12%; transform: translateX(-50%);
+           background: rgba(0,0,0,.82); color: #fff; padding: 10px 16px;
+           border-radius: 8px; font-size: 13px; max-width: 80%; display: none;
+           z-index: 10; line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <canvas id="game"></canvas>
+    <div id="fallback" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#F4F8F2;color:#555;font-size:13px;line-height:1.9;text-align:center;padding:24px;box-sizing:border-box">预览面板未挂载同目录的 game.js<br>请用浏览器直接打开本地 index.html</div>
+  </div>
+  <div id="tip">浏览器预览模式 · 点屏幕任意处移动盘子，接住就会长大一点</div>
+  <div id="toast"></div>
+  <script src="./game.js" onload="document.getElementById('fallback').style.display='none'"></script>
+</body>
+</html>

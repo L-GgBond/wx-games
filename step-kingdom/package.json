@@ -1,0 +1,18 @@
+{
+  "name": "step-kingdom",
+  "version": "0.1.0",
+  "private": true,
+  "description": "步数领地 - 把每天的步数换成领地兵力，一格一格往外占",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "verify": "node verify.mjs",
+    "check": "npm run typecheck && npm run build && npm run verify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  }
+}

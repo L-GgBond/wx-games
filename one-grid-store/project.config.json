@@ -1,0 +1,25 @@
+{
+  "appid": "touristappid",
+  "projectname": "one-grid-store",
+  "compileType": "game",
+  "libVersion": "3.5.0",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "packOptions": {
+    "ignore": [
+      { "type": "folder", "value": "src" },
+      { "type": "folder", "value": "node_modules" },
+      { "type": "file", "value": "index.html" },
+      { "type": "file", "value": "build.mjs" },
+      { "type": "file", "value": "verify.mjs" },
+      { "type": "file", "value": "package.json" },
+      { "type": "file", "value": "package-lock.json" },
+      { "type": "file", "value": "tsconfig.json" },
+      { "type": "file", "value": "README.md" }
+    ]
+  }
+}
